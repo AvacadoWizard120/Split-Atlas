@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "mo_atlas",
+  "version": "${version}",
+  "name": "Mo' Atlas",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/edenj/Mo Atlas"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/mo_atlas/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "io.github.avacadowizard120.mo_atlas.client.Mo_AtlasClient"
+    ],
+    "main": [
+      "io.github.avacadowizard120.mo_atlas.Mo_Atlas"
+    ]
+  },
+  "mixins": [
+    "mo_atlas.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "minecraft": "${minecraft_version}"
+  }
+}
